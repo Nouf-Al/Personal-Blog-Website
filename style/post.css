@@ -1,0 +1,268 @@
+body {
+    margin: 0;
+    font-family: system-ui;
+}
+
+.container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 53vh 900px 67px;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "hd"
+    "content"
+    "ft";
+}
+
+header {
+    height: 100%;
+    width: 100%;
+    grid-area: hd;
+}
+
+section {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 100%;
+    width: 100%;
+    grid-area: content;
+}
+
+footer {
+    height: 100%;
+    width: 100%;
+    grid-area: ft;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 52px;
+    /* text-decoration: none;*/
+}
+
+.social-links .nav-link {
+    margin: 0 0px 0 36px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+.pages-links .nav-link {
+    margin: 0 36px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+.nav-link img {
+    width: 16px;
+}
+
+.menu-icon {
+    display: none;
+}
+
+
+.title h1 {
+    font-size: 127px;
+    margin: 43px 0 0 0;
+    text-align: center;
+}
+
+
+@media(max-width: 320px){
+    .container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 53vh 81% 67px;
+        grid-gap: 10px;
+        grid-template-areas: 
+        "hd"
+        "content"
+        "ft";
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        gap: 20px;
+        grid-area: content;
+    }
+
+    .pages-links {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+        width: 23px;
+        padding: 16px;
+    }
+
+    .title h1 {
+        font-size: 80px;
+        text-align: center;
+        margin: 65px 0 0 0;
+    }
+
+    .background-container {
+        width: 97%;
+        margin: 0 auto;
+        height: 100%;
+        background: #cddc394f;
+    }
+
+    .avatar-container {
+        width: 97%;
+        margin: 0 auto;
+        height: 100%;
+        background: #cddc394f;
+        text-align: center;
+    }
+
+    .bio {
+        text-align: justify;
+        padding: 20px;
+    }
+
+    .post-img {
+        height: 535px;
+        width: 100%;
+        background-color: red;
+        background-image: url("../images/food-3.jpg");
+        background-size: cover;
+    }
+
+    .post-content {
+        padding: 26px;
+        text-align: justify;
+    }
+
+}
+
+@media (min-width: 600px) and (max-width:900px) {
+
+    .container {
+        grid-template-rows: 53vh 1200px 67px;
+    }
+
+    .pages-links {
+        display: none;
+    }
+
+    .menu-icon{
+        display: block;
+        width: 23px;
+        padding: 16px;
+    }
+
+    .title h1 {
+        font-size: 80px;
+        text-align: center;
+        margin: 65px 0 0 0;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        gap: 20px;
+        grid-area: content;
+    }
+
+    .background-container {
+        width: 97%;
+        margin: 0 auto;
+        height: 100%;
+        background: #cddc394f;
+    }
+
+    .avatar-container{
+        width: 97%;
+        margin: 0 auto;
+        height: 100%;
+        background: #cddc394f;
+        text-align: center;
+    }
+
+    .bio{
+        text-align: justify;
+        padding: 20px;
+    }
+
+    .post-img {
+        height: 535px;
+        width: 100%;
+        background-color: red;
+        background-image: url("../images/food-3.jpg");
+        background-size: cover;
+    }
+
+    .post-content {
+        padding: 26px;
+        text-align: justify;
+    }
+
+  }
+
+@media (min-width:901px) {
+    
+    .background-container {
+        width: 80%;
+        margin: 0 0 0 75px;
+        height: 100%;
+        background: #cddc394f;
+    }
+
+    .avatar-container {
+        width: 20%;
+        margin: 0 0 0 75px;
+        height: 40%;
+        background: #cddc394f;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .bio {
+        text-align: justify;
+        padding: 20px;
+    }
+
+    .post-img {
+        height: 535px;
+        width: 100%;
+        background-color: red;
+        background-image: url("../images/food-3.jpg");
+        background-size: cover;
+    }
+
+    .post-content {
+        padding: 26px;
+        text-align: justify;
+    }
+
+    
+  }
+
+footer h5 {
+    text-align: center;
+    font-weight: 100;
+}
+
+.social-media {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.social-media img {
+    width: 25px;
+    margin: 7px;
+}
