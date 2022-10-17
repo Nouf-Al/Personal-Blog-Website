@@ -1,75 +1,6 @@
-body {
-    margin: 0;
-    font-family: system-ui;
-}
-
-.container {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 53vh 600px 67px;
-    grid-gap: 10px;
-    grid-template-areas: 
-    "hd"
-    "content"
-    "ft";
-}
-
-header {
-    height: 100%;
-    width: 100%;
-    grid-area: hd;
-}
-
-section {
-    height: 100%;
-    width: 100%;
-    grid-area: content;
-}
-
-footer {
-    height: 100%;
-    width: 100%;
-    grid-area: ft;
-}
-
-.nav-links {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 52px;
-    /* text-decoration: none;*/
-}
-
-.social-links .nav-link {
-    margin: 0 0px 0 36px;
-    text-decoration: none;
-    color: black;
-    font-size: 14px;
-}
-
-.pages-links .nav-link {
-    margin: 0 36px;
-    text-decoration: none;
-    color: black;
-    font-size: 14px;
-}
-
-.nav-link img {
-    width: 16px;
-}
-
-.menu-icon{
-    display: none;
-}
-
-
-.title h1 {
-    font-size: 127px;
-    margin: 43px 0 0 0;
-    text-align: center;
-}
+@import url("./header.css");
+@import url("./card.css");
+@import url("./stucture.css");
 
 @media(max-width: 320px){
     .container {
@@ -171,50 +102,6 @@ footer {
         justify-content: space-evenly;
     }
   }
-
-.card {
-    width: 290px;
-    height: 400px;
-    background: white;
-    margin: 109px 0 0 0;
-}
-
-.card-img {
-    width: 85%;
-    height: 70%;
-    margin: -46px auto;
-    border: 2px solid #2196f3 !important;
-}
-
-.card-img1 {
-    background-image: url("../images/food-1.jpg");
-    background-size: cover;
-    
-}
-
-.card-img2 {
-    background-image: url("../images/food-2.jpg");
-    background-size: cover;
-}
-
-.card-img3 {
-    background-image: url("../images/food-3.jpg");
-    background-size: cover;
-}
-
-.post-text {
-    margin: 67px 11px 0 11px;
-}
-
-.post-links {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.post-links img {
-    width: 19px;
-}
 
 footer h5 {
     text-align: center;

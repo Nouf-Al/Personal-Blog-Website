@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    font-family: system-ui;
+}
+
+.container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 53vh 600px 67px;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "hd"
+    "content"
+    "ft";
+}
+
+header {
+    height: 100%;
+    width: 100%;
+    grid-area: hd;
+}
+
+section {
+    height: 100%;
+    width: 100%;
+    grid-area: content;
+}
+
+footer {
+    height: 100%;
+    width: 100%;
+    grid-area: ft;
+}
