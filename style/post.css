@@ -79,7 +79,7 @@ footer {
         width: 100%;
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 53vh 81% 67px;
+        grid-template-rows: 53vh 83% 67px;
         grid-gap: 10px;
         grid-template-areas: 
         "hd"
@@ -150,7 +150,7 @@ footer {
 @media (min-width: 600px) and (max-width:900px) {
 
     .container {
-        grid-template-rows: 53vh 1200px 67px;
+        grid-template-rows: 53vh 1279px 67px;
     }
 
     .pages-links {
